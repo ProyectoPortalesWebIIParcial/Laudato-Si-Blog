@@ -1,0 +1,281 @@
+:root {
+  --white: #ffffff;
+  --green: #8EC231;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(135deg, var(--white) 0%, #8EC231 100%);
+  min-height: 100%;
+}
+
+header {
+  width: 100%;
+  background: #4e94ab;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 25px;
+  border-right: 1px solid var(--white);
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  border-right: 1px solid var(--white);
+}
+
+.menu li:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu li a {
+  display: block;
+  padding: 25px 30px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  header label {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    background: #4e94ab;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li {
+    border-top: 1px solid var(--white);
+  }
+
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+}
+
+.buttom i {
+  color: var(--white);
+  font-size: 2.5em;
+}
+
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 70%;
+  height: 10em;
+}
+@media (min-width: 768px) {
+  .logo img {
+    width: 50%;
+    height: 15em;
+  }
+}
+
+.main-content {
+  margin: 0 2em;
+}
+
+footer .menu-social ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  padding: 0;
+}
+
+footer{
+  background-color:#4e94ab ;
+  padding-top: 1em;
+  display: flex;
+  margin: auto 0;
+  flex-direction: column-reverse;
+  height: auto;
+}
+.menu-social i {
+  color: var(--white);
+  font-size: 3em;
+  margin: 0 0.15em;
+  
+}
+.menu-social i:hover {
+  color: #8EC231;
+}
+
+footer .copyright{
+  text-align: center;
+  height:auto;
+  margin: 0;
+  color: var(--white);
+  padding-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+   flex-direction: column-reverse;
+   text-align: center;
+   padding-left: 2em;
+   margin: 0;
+  }
+  .menu-social i {
+    font-size: 1.5em;
+    margin: 0 0.15em;
+  }
+
+  footer .menu-social ul {
+   text-align: right;
+   width: auto;
+   margin: 0;
+  }
+  .copyright{
+    text-align: left;
+    width: auto;
+  }
+}
+
+.main-content{
+  text-align: center;
+  margin: 0.75em;
+  margin-bottom: 0;
+  background-color: var(--white);
+  border: 0.2em solid var(--green);
+}
+.main-content img{
+  width: 14em;
+  height: 8em;
+}
+h1{
+  margin: 0;
+}
+h5{
+  margin: 0;
+}
+.main-content p{
+  text-align: justify;
+  padding: 1.25em;
+  margin: 0;
+}
+.main-content .title{
+  background-color: var(--green);
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+@media (min-width: 768px) {
+  .main-content .title{
+
+    text-align: left;
+    padding-left: 1.75em;
+  }
+
+  .main-content img{
+    width: 22em;
+    height: 12em;
+    padding: 0.75em 0;
+  }
+}
+
+.main-comment{
+  background-color: var(--green);
+  text-align: center;
+  margin: 0.75em;
+  margin-top: 0;
+  text-align: center;
+  padding-left: 0.75em;
+  padding-bottom: 0.75em;
+
+  display: flex;
+  flex-direction: column;
+}
+.main-comment h3{
+  margin-top: 0;
+  padding-top: 0.75em;
+  color: var(--white);
+}
+
+.main-comment .name-div{
+  margin-bottom: 1em;
+}
+
+.main-comment .email-div{
+  margin-bottom: 1em;
+}
+
+
+.main-comment .comment-div{
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-div textarea{
+  width: auto;
+  margin: 0 1em;
+}
+
+.name-div input{
+  width: 80%;
+}
+
+.email-div input{
+  width: 80%;
+}
+
+@media(min-width:768px){
+  .main-comment{
+    text-align: left;
+  }
+  .main-comment .comment-div{
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment-div textarea{
+    width: 60%;
+    margin: 0;
+  }
+  
+  .name-div input{
+    width: 53.5%;
+  }
+  
+  .email-div input{
+    width: 46.1%;
+  }
+}
+
+
+
