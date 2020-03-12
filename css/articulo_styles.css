@@ -1,5 +1,6 @@
 :root {
   --white: #ffffff;
+  --green: #8EC231;
 }
 body {
   margin: 0;
@@ -166,28 +167,36 @@ footer .copyright{
 .main-content{
   text-align: center;
   margin: 0.75em;
+  margin-bottom: 0;
   background-color: var(--white);
+  border: 0.2em solid var(--green);
 }
 .main-content img{
   width: 14em;
   height: 8em;
 }
+h1{
+  margin: 0;
+}
+h5{
+  margin: 0;
+}
 .main-content p{
   text-align: justify;
   padding: 1.25em;
+  margin: 0;
 }
-.main-content h2{
-  background-color: #313a42;
+.main-content .title{
+  background-color: var(--green);
   color: var(--white);
   text-align: center;
-  padding: 1em 0;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 @media (min-width: 768px) {
-  .main-content h2{
-    background-color: #8EC231;
-    color: var(--white);
+  .main-content .title{
+
     text-align: left;
-    padding: 1em 0;
     padding-left: 1.75em;
   }
 
@@ -197,3 +206,76 @@ footer .copyright{
     padding: 0.75em 0;
   }
 }
+
+.main-comment{
+  background-color: var(--green);
+  text-align: center;
+  margin: 0.75em;
+  margin-top: 0;
+  text-align: center;
+  padding-left: 0.75em;
+  padding-bottom: 0.75em;
+
+  display: flex;
+  flex-direction: column;
+}
+.main-comment h3{
+  margin-top: 0;
+  padding-top: 0.75em;
+  color: var(--white);
+}
+
+.main-comment .name-div{
+  margin-bottom: 1em;
+}
+
+.main-comment .email-div{
+  margin-bottom: 1em;
+}
+
+
+.main-comment .comment-div{
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-div textarea{
+  width: auto;
+  margin: 0 1em;
+}
+
+.name-div input{
+  width: 80%;
+}
+
+.email-div input{
+  width: 80%;
+}
+
+@media(min-width:768px){
+  .main-comment{
+    text-align: left;
+  }
+  .main-comment .comment-div{
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment-div textarea{
+    width: 60%;
+    margin: 0;
+  }
+  
+  .name-div input{
+    width: 53.5%;
+  }
+  
+  .email-div input{
+    width: 46.1%;
+  }
+}
+
+
+
