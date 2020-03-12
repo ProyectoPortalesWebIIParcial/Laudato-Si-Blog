@@ -1,17 +1,18 @@
 :root {
   --white: #ffffff;
   --green: #8EC231;
+  --azul: #4e94ab;
 }
 body {
   margin: 0;
   font-family: sans-serif;
-  background-image: linear-gradient(135deg, var(--white) 0%, #8EC231 100%);
+  background-image: linear-gradient(135deg, var(--white) 0%, var(--green) 100%);
   min-height: 100%;
 }
 
 header {
   width: 100%;
-  background: #4e94ab;
+  background: var(--azul);
 }
 
 #btn-menu {
@@ -61,7 +62,7 @@ header label:hover {
 
   .menu {
     position: absolute;
-    background: #4e94ab;
+    background: var(--azul);
     width: 70%;
     margin-left: -70%;
     transition: all 0.5s;
@@ -115,7 +116,7 @@ footer .menu-social ul {
 }
 
 footer{
-  background-color:#4e94ab ;
+  background-color:var(--azul);
   padding-top: 1em;
   display: flex;
   margin: auto 0;
@@ -129,7 +130,7 @@ footer{
   
 }
 .menu-social i:hover {
-  color: #8EC231;
+  color: var(--green);
 }
 
 footer .copyright{
