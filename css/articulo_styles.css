@@ -103,6 +103,9 @@ header label:hover {
 
 .main-content {
   margin: 0 2em;
+  -webkit-box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.75);
 }
 
 footer .menu-social ul {
@@ -216,9 +219,12 @@ h5{
   text-align: center;
   padding-left: 0.75em;
   padding-bottom: 0.75em;
-
   display: flex;
   flex-direction: column;
+
+  -webkit-box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.75);
 }
 .main-comment h3{
   margin-top: 0;
@@ -247,11 +253,11 @@ h5{
 }
 
 .name-div input{
-  width: 80%;
+  width: 100%;
 }
 
 .email-div input{
-  width: 80%;
+  width: 100%;
 }
 
 @media(min-width:768px){
@@ -270,11 +276,11 @@ h5{
   }
   
   .name-div input{
-    width: 53.5%;
+    width: 54.6%;
   }
   
   .email-div input{
-    width: 46.1%;
+    width: 48.5%;
   }
 }
 
