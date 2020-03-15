@@ -93,6 +93,7 @@ header label:hover {
 .logo img {
   width: 70%;
   height: 10em;
+  min-width: 15em;
 }
 @media (min-width: 768px) {
   .logo img {
@@ -174,10 +175,12 @@ footer .copyright{
   margin-bottom: 0;
   background-color: var(--white);
   border: 0.2em solid var(--green);
+  min-width: 15em;
 }
 .main-content img{
   width: 14em;
   height: 8em;
+  margin-top: 1em;
 }
 h1{
   margin: 0;
@@ -221,7 +224,8 @@ h5{
   padding-bottom: 0.75em;
   display: flex;
   flex-direction: column;
-
+  min-width: 14.6em;
+  
   -webkit-box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.75);
@@ -234,10 +238,14 @@ h5{
 
 .main-comment .name-div{
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-comment .email-div{
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -253,14 +261,23 @@ h5{
 }
 
 .name-div input{
-  width: 100%;
+  width: auto;
+  margin-right: 0.7em;
 }
 
 .email-div input{
-  width: 100%;
+  width: auto;
+  margin-right: 0.7em;
 }
 
 @media(min-width:768px){
+  .main-comment .name-div{
+    flex-direction: row;
+  }
+
+  .main-comment .email-div{
+    flex-direction: row;
+  }
   .main-comment{
     text-align: left;
   }
@@ -271,16 +288,16 @@ h5{
   }
   
   .comment-div textarea{
-    width: 60%;
+    width: 33.6em;
     margin: 0;
   }
   
   .name-div input{
-    width: 54.6%;
+    width: 29.6em;
   }
   
   .email-div input{
-    width: 48.5%;
+    width: 25em;
   }
 }
 
