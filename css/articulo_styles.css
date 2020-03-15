@@ -93,6 +93,7 @@ header label:hover {
 .logo img {
   width: 70%;
   height: 10em;
+  min-width: 15em;
 }
 @media (min-width: 768px) {
   .logo img {
@@ -174,10 +175,12 @@ footer .copyright{
   margin-bottom: 0;
   background-color: var(--white);
   border: 0.2em solid var(--green);
+  min-width: 15em;
 }
 .main-content img{
   width: 14em;
   height: 8em;
+  margin-top: 1em;
 }
 h1{
   margin: 0;
@@ -221,7 +224,8 @@ h5{
   padding-bottom: 0.75em;
   display: flex;
   flex-direction: column;
-
+  min-width: 14.6em;
+  
   -webkit-box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.75);
